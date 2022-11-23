@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Find - Brand</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="../css/vanilla-zoom.min.css">
+    <link rel="stylesheet" href="../css/mycss.css">
+
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
+        <div class="container"><a class="navbar-brand logo" href="http://localhost:8000">Trang Chủ</a><button
+                data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span
+                    class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav ms-auto">
+                    <div class="container"><a class="navbar-brand logo" href="http://localhost:8000">Quay Trở Lại</a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="page">
+        <section class="clean-block features">
+            <div class="container">
+                <div class="block-heading">
+                    <h2 class="text-info">Tìm kiếm sinh viên</h2>
+                </div>
+                <form>                    
+                    <div class="mb-3"><label class="form-label" for="tinh_find">Địa chỉ</label><input class="form-control item" type="text" id="tinh_find"></div>
+                    <button class="btn btn-primary" type="button" onclick="find()">Find</button>
+                    <button class="btn btn-primary" href="/assets/html/find.html">Restart </button>                   
+                </form>
+                <div class="table-responsive">
+                    <table class="table">
+                    <thead>                  
+                        <tr class ="tr">
+                            <th>MSSV</th>
+                            <th>NAME</th>
+                            <th>Email</th>
+                            <th>Number Phone</th>
+                            <th>Address</th>
+
+                        </tr>
+                    </thead>
+                    <tbody id = "table_body">
+
+                    </tbody>
+                    </table>
+                </div> 
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer dark">
+        <div class="footer-copyright">
+            <p>Can Tho University</p>
+        </div>
+    </footer>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script src="../js/vanilla-zoom.js"></script>
+    <script src="../js/theme.js"></script>
+    <script src="../js/search.js"></script>
+</body>
+
+</html>
